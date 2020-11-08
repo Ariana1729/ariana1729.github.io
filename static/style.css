@@ -58,6 +58,19 @@ body {
   background-color: #555;
 }
 
+.footer {
+  text-decoration: none !important;
+}
+
+.text-muted {
+	color: #b4b;
+    text-align: center
+}
+
+div.footer{
+  border-bottom: 5px solid #ed3e44;;
+}
+
 a:link {
   color: #cfc;
 }
@@ -72,4 +85,9 @@ a:hover {
 
 a:active {
   color: #ccc;
-} 
+}
+
+#writeuptable td {
+  padding-left: 20px;
+  padding-right: 20px;
+}

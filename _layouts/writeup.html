@@ -32,7 +32,12 @@
         </ul>
         <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
         <br/>
+        <h1 style="font-size: 200%; text-align: center;">{{ page.chal }}</h1>
         {{ content }}
+        <blockquote>
+            <p> Flag: <span class="highlight"><code> {{ page.flag }} </code></span></p>
+        </blockquote>
+        {% include footer.html %}
     </body>
 </html>
 
