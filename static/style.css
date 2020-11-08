@@ -1,0 +1,75 @@
+body {
+  background-color: #202;
+  color: #cfc;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbarleft {
+  float: left;
+}
+
+.navbarright {
+  float: right;
+}
+
+.navbara {
+  display: block;
+  color: #cfc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbara:hover:not(.active) {
+  background-color: #222;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #33333375;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+a:link {
+  color: #cfc;
+}
+
+a:visited {
+  color: #ccc;
+}
+
+a:hover {
+  color: #faf;
+}
+
+a:active {
+  color: #ccc;
+} 
