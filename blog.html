@@ -1,0 +1,19 @@
+---
+layout: default
+title: Ariana's Site
+---
+
+<h1 style="font-size: 200%; text-align: center;">Blog</h1>
+
+<table id="writeuptable">
+    <tr>
+        <td>Date</td>
+        <td>Name</td>
+    </tr>
+    {% for writeup in site.posts %}
+        <tr>
+            <td>{{ writeup.date | date: "%B %e, %Y" }}</td>
+            <td><a href="{{ writeup.url }}">{{ writeup.title }}</a></td>
+        </tr>
+    {% endfor %}
+</table>

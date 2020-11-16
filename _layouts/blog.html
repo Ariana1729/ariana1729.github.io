@@ -4,7 +4,8 @@
         <link rel="stylesheet" href="/static/style.css"/>
         <link rel="stylesheet" href="/static/vim.css"/>
         <script type="text/javascript" src="/static/script.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/static/mathjax_macros.js"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     </head>
     <body>
         <ul class="navbar"> 
@@ -32,6 +33,7 @@
         </ul>
         <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
         <br/>
+        <h1 style="font-size: 200%; text-align: center;">{{ page.chal }}</h1>
         {{ content }}
         {% include footer.html %}
     </body>
