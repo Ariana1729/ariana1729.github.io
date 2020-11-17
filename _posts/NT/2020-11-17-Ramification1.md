@@ -33,7 +33,7 @@ for p in flatten([[j[0] for j in K.factor(i)] for i in [2,23,31]]):
     print(sum(i*j for i,j in P),P)
 ```
 
-The proof only requires \\(\mc B\\) to be finitely generated over \\(\mc A\\), hence any counterexamples when relaxing the separable condition to Theorem 1 would require \\(\mc B\\) to not be finitely generated. Such a example can be found [here](https://math.stackexchange.com/a/24612/258870):
+As the proof of the theorem only requires \\(\mc B\\) to be finitely generated over \\(\mc A\\), any counterexamples when relaxing the separable condition to Theorem 1 would require \\(\mc B\\) to not be finitely generated. Such a example can be found [here](https://math.stackexchange.com/a/24612/258870):
 
 Let \\(k\\) be a field of characteristic \\(p>0\\) and let \\(y\in k[[x]]\\) be transcendental over \\(k[x]\\). Let \\(K=k\left(x,y^p\right), L=k\left(x,y\right), \mc A=k[[x]]\cap k\left(x,y^p\right), \mc B=k[[x]]\cap k\left(x,y\right)\\). \\(\mc A,\mc B\\) are DVRs with maximal ideal \\((x)\\) (hence Dedekind domains) with field of fractions \\(K,L\\) respectively and the extension \\(L/K\\) has degree \\(p\\). However, the residue field of \\(\mc A,\mc B\\) are both \\(k\\), hence the inertia degree and the ramification index of the prime \\((x)\\) is \\(1\\), in contrary to Theorem 1.
 

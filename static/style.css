@@ -1,6 +1,7 @@
 body {
   background-color: #202;
   color: #cfc;
+  font-size: medium;
 }
 
 .navbar {
@@ -93,5 +94,6 @@ a:active {
 }
 
 code, code * {
-    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif; 
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
+    font-size: small;    
 }
