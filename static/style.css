@@ -93,6 +93,10 @@ a:active {
   padding-right: 20px;
 }
 
+pre {
+    overflow-x: auto;
+}
+
 code, code * {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
     font-size: small;    
