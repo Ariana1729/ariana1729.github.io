@@ -45,7 +45,7 @@ Then if \\(\mf p\subset\mc A\\) is relatively prime to \\(\mc F\\), let \\(p(x)=
 
 This allows us to determine the splitting behavior of primes purely by looking at how polynomials split as we can vary the choice of primitive element to obtain a conductor coprime to a prime of choice.
 
-We can also try this out in sage with a number field without a power basis for its ring of integers:
+We can also try this out in sage with a number field without a power basis for its ring of integers. Sage doesn't seem to have a way to compute the conductor, however we can compute the norm with `O.discriminant()/K.disc()` for number fields:
 
 ```python
 K.<a> = NumberField(x^3+x^2-2*x+8)
