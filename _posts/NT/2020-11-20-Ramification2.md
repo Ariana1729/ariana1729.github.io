@@ -69,6 +69,34 @@ We have the bijection from the double cosets \\(H\setminus G/G_{\mf P}\\) to the
 We have \\(\Gal{\left.\frac{\mc C}{\mf P}\right/\frac{\mc A}{\mf p}}\cong\frac{G_{\mf P}}{I_{\mf P}}\\) and the tower of field extensions \\(\left.\left.\frac{\mc C}{\mf P}\right/\frac{\mc B}{\mf P_B}\right/\frac{\mc A}{\mf p}\\). As \\(H=\Gal{M/L}\\), we have the surjection from \\(H\cap G_{\mf P}\to\Gal{\left.\frac{\mc C}{\mf P}\right/\frac{\mc B}{\mf P_B}}\\) with kernel \\(H\cap I_{\mf P}\\), hence we have
 \\[\left[\frac{G_{\mf P}}{I_{\mf P}}:\frac{G_{\mf P}\cap H}{I_{\mf P}\cap H}\right]=\left[\frac{\mc C}{\mf P}:\frac{\mc B}{\mf P_B}\right]=f_{\mf P_B\|\mf p}\\]
 
+We can also write some sage code to test this! Note that the following sage code does take some time to run.
+
+```python
+K.<a> = NumberField(x^4 + x^3 + 3*x^2 + 4*x + 18)
+L.<b> = K.galois_closure()
+q = 17
+print("Computed Galois closure")
+f = K.embeddings(L)[0]
+G = list(L.galois_group())
+print("Computed Gal(L/Q)")
+aL = f(a)
+H = [g for g in G if g(aL)==aL]
+print("Computed Gal(L/K)")
+for p,eK in K.factor(q):
+    fK = p.residue_class_degree()
+    print(f"Prime above {q}: {p}")
+    print(f"Ramification index: {eK}")
+    print(f"Inertia degree: {fK}")
+    for P,eL in L.factor([f(i) for i in p.gens()]):
+        fL = P.residue_class_degree()/fK
+        GP = P.decomposition_group()
+        IP = P.inertia_group()
+        GPH = [g for g in GP if g in H]
+        IPH = [g for g in IP if g in H]
+        t = len(GP)*len(IPH)/QQ(len(GPH)*len(IP))
+        print(f"\tComputed inertia degree with groups: {t}")
+```
+
 The behavior of other primes can be found easily as well as the decomposition and inertia groups are conjugates to each other for the conjugate primes.
 
 With the decomposition and inertia fields, we can easily show that
@@ -77,4 +105,27 @@ With the decomposition and inertia fields, we can easily show that
 
 The reverse inclusion is immediate as \\(L\subseteq T_{\mf P}=M\\) and \\(L\subseteq Z_{\mf P}=M\\) respectively. For the forward inclusion, note that we have \\(\sigma L\subseteq T_{\mf P}\\) and \\(\sigma L\subseteq Z_{\mf P}\\) respectively for all \\(\sigma\in\Gal{M/K}\\). As \\(M\\) is the Galois closure if \\(L\\), this implies that \\(T_{\mf P}=M\\) and \\(Z_{\mf P}=M\\) respectively, showing the forward inclusion.
 
-//some example
+Similarly, we can also write some sage code to check this:
+
+```python
+K.<a> = NumberField(x^4 + x^3 + 3*x^2 + 4*x + 18)
+L.<b> = K.galois_closure()
+dK = K.degree()
+dL = L.degree()
+print("Computed Galois closure")
+for p in Primes()[:100]:
+    fac = K.factor(p)
+    if len(fac) == dK:
+        print(f"{p} is totally split in K")
+    elif all(e==1 for e,f in fac):
+        print(f"{p} is unramified in K")
+    else:
+        print(f"{p} has some ramification/inertia")
+    fac = L.factor(p)
+    if len(fac) == dL:
+        print(f"{p} is totally split in L")
+    elif all(e==1 for e,f in fac):
+        print(f"{p} is unramified in L")
+    else:
+        print(f"{p} has some ramification/inertia")
+```
