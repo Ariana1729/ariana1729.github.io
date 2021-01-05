@@ -48,11 +48,14 @@ Since \\(r\<e\\), we have \\(rf-d\\) is negative, so we have less elements in th
 \\[\left(\frac{\mc O}{\mf P^n}\right)^\*\cong\frac{\mc O^\*}{U^{(n)}}\cong C_{q-1}\oplus C_{p^{\left\lceil\frac{n-1}e\right\rceil}}^{d-rf}\oplus G\\]
 
 where \\(G\\) is a group with \\(rf\\) generators of order a power of \\(p\\) but at most \\(p^{n-1}\\). Let \\(g_i\\) be the generators, by the same counting argument, we also need
-\\[\prod\text{ord}\left(g_i\right)=p^{\left(\left\lceil\frac{n-1}e\right\rceil\right)rf}\\]
+\\[\prod\text{ord}\left(g_i\right)=p^{\left(\left\lceil\frac{n-1}e-1\right\rceil\right)rf}\\]
 
 Notice that when \\(e=1\\), we have \\(r=0\\), rederiving the unramified case.
 
-If \\(a\neq0\\), we could possibly modify the result slightly by having \\(p^{rf-d+a}\\) and trying a similar analysis.
+If \\(a\neq0\\), we could possibly modify the result slightly by having \\(p^{rf-d+a}\\) and as long as \\(rf-d+a<0\\), the result holds except we have 
+\\[\left(\frac{\mc O}{\mf P^n}\right)^\*\cong\frac{\mc O^\*}{U^{(n)}}\cong C_{q-1}\oplus C_{p^{\left\lceil\frac{n-1}e\right\rceil}}^{d-rf+a}\oplus G\\]
+where \\(G\\) has \\(rf-a\\) generators satisfying 
+\\[\prod\text{ord}\left(g_i\right)=p^{\left(\left\lceil\frac{n-1}e-1\right\rceil\right)(rf-a)}\\]
 
 ## Example
 
@@ -73,11 +76,13 @@ p = 7
 n = 3
 for P,e in K.factor(p):
     f = P.residue_class_degree()
-    if p<=e+1:
+    d = e*f
+    a = e//(p-1)
+    r = (1-n)%e
+    if r*f-d+a>=0:
         print("a could be non-zero, skipping this case")
         continue
     print(f"Checking the prime {P} with ramification index {e} and inertia degree {f}")
-    d = e*f
     RqI = R.quo(P^n,'b')
     od = p^(1+(n-2)//e)*(p^f-1)  # order
     for p_fac in [i for i,j in list(factor(p^f-1))]+[p]:
