@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ramification (1/n)
+title: Ramification Part 1
 ---
 
 The proofs for statements can be found in Neukirch Section 1.8.

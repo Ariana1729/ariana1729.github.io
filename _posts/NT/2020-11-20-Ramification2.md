@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ramification (2/n)
+title: Ramification Part 2
 ---
 
 ## Definitions
@@ -18,7 +18,7 @@ Fix some prime \\(\mf p\\) in \\(K\\) and let its factorization in \\(M\\) be \\
 
 The first property can be proven by contradiction as the norm of any element in \\(P_i\\) is in \\(\mf p\\) while the second is because any \\(\sigma\in G\\) is an automorphism of \\(\mc C\\). Hence, there is no ambiguity when we say the inertia degree and ramification index of \\(\mf p\\) in \\(M\\). From now, let \\(e,f\\) be the ramification index and the inertia degree of \\(\mf p\\) in \\(M\\) and \\(r\\) be the number of primes above \\(\mf p\\). 
 
-Let \\(\mf P\\) be any prime in \\(M\\) above \\(\mf p\\) in \\(K\\). We define the **decomposition group** \\(G_{\mf P}\\) as the the stabalizer subgroup of \\(\mf P\\) under the action of \\(G\\) and the **decomposition field** \\(Z_{\mf P\\) as the fixed field of \\(G_{\mf P}\\).
+Let \\(\mf P\\) be any prime in \\(M\\) above \\(\mf p\\) in \\(K\\). We define the **decomposition group** \\(G_{\mf P}\\) as the the stabalizer subgroup of \\(\mf P\\) under the action of \\(G\\) and the **decomposition field** \\(Z_{\mf P}\\) as the fixed field of \\(G_{\mf P}\\).
 
 Before continuing, we need a short proposition:
 
