@@ -9,9 +9,11 @@ title: Ariana's Site
 ## Repertoire
 {: style="text-align: center;"}
 
- - Liszt/Schubert - Erlkönig
  - Rachmaninoff - Études-Tableaux Op. 39 No. 6 "Little Red Riding Hood"
+ - Rachmaninoff - Prelude in G minor
+ - Liszt/Schubert - Erlkönig
  - Liszt - Hungarian Rhapsody No. 6
+ - Chopin - Étude Op. 25 No. 6 "Thirds"
 
 ## Compositions
 {: style="text-align: center;"}
