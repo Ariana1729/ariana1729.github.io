@@ -5,6 +5,7 @@ chal: A Perfectly Normal App (A)
 flag: WH2021{y0U/f0UnD/tH3/C51t/F1Ag} 
 points: 495
 solves: 8
+category: CSIT
 ---
 
 >Two flags have been hidden in this Android Application.

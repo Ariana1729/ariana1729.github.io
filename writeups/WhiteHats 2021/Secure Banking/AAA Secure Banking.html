@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style type="text/css" id="dark-mode-custom-style" lang="en"></style><style type="text/css" id="dark-mode-native-style" lang="en"></style><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>AAA Secure Banking</title>
+</head>
+
+
+<body>
+    <h2>Welcome to AAA Banking</h2>
+    <p>We offer the most secure banking system. Trusted by many worldwide.</p>
+    <p>Using state of the art <a href="https://www.solarwindsmsp.com/blog/sha-256-encryption">SHA256 encryption</a> and an unguessable 19 character secret key,
+        we promise our bank will never get hacked</p>
+    <br>
+    <h3>Try it out now!</h3>
+    <form action="index.php" method="POST">
+        <label for="Details">Details</label><br>
+        <input type="text" id="details" name="details"><br>
+        <label for="hash">Verification Hash</label><br>
+        <input type="text" id="hash" name="hash"><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    <br>
+    <h3>How it works?</h3>
+    <ol>
+        <li>Decode the given string to obtain transaction details</li>
+        <li>Check the SHA256(secret + decoded_string) against given hash</li>
+        <li>Once checked to be same, increase safety by <i>adding slashes <br>to characters that need to be escaped</i> in decoded string</li>
+        <li>Parse the string to obtain the details within the <b>safe</b> string</li>
+    </ol>
+
+    <br>
+    <footer>©2021. Patent pending hashing verification technology</footer>
+
+
+
+<style>
+    html {
+        display: flex;
+        background-color: #222222;
+        color: #ffffff;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: yellowgreen;
+    }
+
+    input {
+        min-width: 40vw;
+    }
+</style>
+
+</body></html>
