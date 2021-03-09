@@ -2,6 +2,7 @@
 layout: writeup
 ctf: WhiteHats CTF 2021
 chal: This requires a very Smart Attack (A, B)
+category: crypto
 flag: WH2021{N0t_4_v3rY_S3cUr3_3nCrypT10n_1f_kn0w1ng_0n3_s33d_C4n_d3crYp4_s0_mUCh}, WH2021{0_w0w_U_d1D_1t_g00d_jOB}
 points: 500, 500
 solves: 1, 1

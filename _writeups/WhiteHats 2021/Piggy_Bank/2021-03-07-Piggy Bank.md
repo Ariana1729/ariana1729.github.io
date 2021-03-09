@@ -2,10 +2,10 @@
 layout: writeup
 ctf: WhiteHats CTF 2021
 chal: Piggy_Bank / Piggy_Bank_Revenge
+category: pwn
 flag: WH2021{N0w_the_p1ggy_is_wORS3_than_empty_:'(} / WH2021{(Don't)Try_th1s_0n_youR_B4nk!}
 points: 287 / 539
 solves: 64 / 51
-category: pwn
 ---
 
 Piggy bank

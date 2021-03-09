@@ -2,10 +2,10 @@
 layout: writeup
 ctf: WhiteHats CTF 2021
 chal: SnakeShell
+category: misc
 flag: WH2021{Heh_wH0'5_tH3_0ne_wH0_G0T_pwned!}
 points: 972
 solves: 16
-category: misc
 ---
 
 > We have employed the best snakes in the industry to perform automatic hacking for you. You simply need to enter the target IP address and number of tries and it will infiltrate the system for you.

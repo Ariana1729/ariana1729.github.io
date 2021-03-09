@@ -2,10 +2,10 @@
 layout: writeup
 ctf: WhiteHats CTF 2021
 chal: Secure Banking
+category: crypto
 flag: WH2021{$m00000n3y_g0_Burrrrrrrrrrrrrrr}
 points: 986
 solves: 9
-category: crypto
 ---
 
 > Your friend Peter has built a new online transaction and banking service called AAA Banking. He claims it is extremely secure, using SHA256 hashing to create and verify HMACs. To get you onto the platform, he has sent you $20 for free! Try it out now! Check out the [platform](AAA Secure Banking.html)!

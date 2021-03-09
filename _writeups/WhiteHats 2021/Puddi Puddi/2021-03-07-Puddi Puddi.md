@@ -2,10 +2,10 @@
 layout: writeup
 ctf: WhiteHats CTF 2021
 chal: Puddi Puddi
+category: pwn
 flag: WH2021{3880fba0faf0_g1g4_pudd1}
 points: 981
 solves: 12
-category: pwn
 ---
 
 > Why have a MEGA 🍮 when you can have a GIGA 🍮?

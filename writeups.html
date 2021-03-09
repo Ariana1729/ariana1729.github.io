@@ -12,6 +12,7 @@ title: Ariana's Site
         <td>Date</td>
         <td>CTF</td>
         <td>Challenge</td>
+        <td>Category</td>
         <td>Points</td>
         <td>Solves</td>
     </tr>
@@ -20,6 +21,7 @@ title: Ariana's Site
             <td>{{ writeup.date | date: "%B %e, %Y" }}</td>
             <td>{{ writeup.ctf }}</td>
             <td><a href="{{ writeup.url }}">{{ writeup.chal }}</a></td>
+            <td>{{ writeup.category }}</td>
             <td>{{ writeup.points }}</td>
             <td>{{ writeup.solves }}</td>
         </tr>

@@ -2,10 +2,10 @@
 layout: writeup
 ctf: WhiteHats CTF 2021
 chal: Eight Masketeers
+category: misc
 flag: WH2021{MY_MASKS_R_THE_BEST}
 points: 992
 solves: 4
-category: misc
 ---
 
 > Alice discovered a note (titled 8 MASKeteers) left behind by Bob after a lesson on bitwise operations.
