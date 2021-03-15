@@ -59,3 +59,5 @@ ariana@ariana ~/D/S/2/W/Hopscotch> py exploit.py remote
 Enter input: $ grep -rnw "WH2021" / 2>/dev/null
 /home/hopscotch/flag.txt:1:WH2021{8a11f6615742a_h0p_st3p_jUMp_Dr3w_Dr@w_dr@wN}
 ```
+
+The solution script can be found at [exploit.py](exploit.py)

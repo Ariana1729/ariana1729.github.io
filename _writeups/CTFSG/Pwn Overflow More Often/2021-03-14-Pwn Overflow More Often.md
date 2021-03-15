@@ -125,4 +125,4 @@ $ cat /home/pomo/flag.txt
 CTFSG{g@dg3tRy_W1z@rdry_tO_pWn_g0l@nG}
 ```
 
-The solution script can be found at [solve.py](solve.py)
+The solution script can be found at [exploit.py](exploit.py)
