@@ -13,7 +13,10 @@ title: Ariana's Site
  - Rachmaninoff - Prelude in G minor
  - Liszt/Schubert - Erlkönig
  - Liszt - Hungarian Rhapsody No. 6
+ - Liszt - La Campanella (S. 141 No. 3)
+ - Liszt - Transcendental Études no. 6 "Vision"
  - Chopin - Étude Op. 25 No. 6 "Thirds"
+ - Grażyna Bacewicz - 10 Studies for piano no. 6
 
 ## Compositions
 {: style="text-align: center;"}
