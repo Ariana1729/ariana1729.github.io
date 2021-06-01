@@ -1,5 +1,0 @@
-arr = eval(open("matrix","r").read())
-M = Matrix(GF(17),arr)
-v = M.right_kernel().gens()
-print(v[0] + sum(v[i+1]*j for i,j in enumerate(i for i in range(16) if i not in v[0][10:])))
-print(len(v))

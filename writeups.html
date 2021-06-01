@@ -16,7 +16,7 @@ title: Ariana's Site
         <td>Points</td>
         <td>Solves</td>
     </tr>
-    {% for writeup in site.writeups %}
+    {% for writeup in site.writeups reversed %}
         <tr>
             <td>{{ writeup.date | date: "%B %e, %Y" }}</td>
             <td>{{ writeup.ctf }}</td>
