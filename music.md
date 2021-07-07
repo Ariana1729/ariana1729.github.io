@@ -9,14 +9,16 @@ title: Ariana's Site
 ## Repertoire
 {: style="text-align: center;"}
 
- - Rachmaninoff - Études-Tableaux Op. 39 No. 6 "Little Red Riding Hood"
- - Rachmaninoff - Prelude in G minor
+ - Chopin - Étude Op. 25 No. 6 "Thirds"
+ - Chopin - Fantasie Impromptu
+ - Grażyna Bacewicz - 10 Studies for piano no. 6
  - Liszt/Schubert - Erlkönig
  - Liszt - Hungarian Rhapsody No. 6
  - Liszt - La Campanella (S. 141 No. 3)
+ - Liszt - Transcendental Études no. 4 "Mazeppa"
  - Liszt - Transcendental Études no. 6 "Vision"
- - Chopin - Étude Op. 25 No. 6 "Thirds"
- - Grażyna Bacewicz - 10 Studies for piano no. 6
+ - Rachmaninoff - Études-Tableaux Op. 39 No. 6 "Little Red Riding Hood"
+ - Rachmaninoff - Prelude in G minor
 
 ## Compositions
 {: style="text-align: center;"}
