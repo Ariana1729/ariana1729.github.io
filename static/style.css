@@ -1,7 +1,11 @@
 body {
-    background-color: #101;
+    background-color: #180818;
     color: #dfd;
     font-size: medium;
+}
+
+p {
+    margin: 0% 5% 0% 5%; 
 }
 
 .navbar {
