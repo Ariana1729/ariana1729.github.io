@@ -4,8 +4,12 @@ body {
     font-size: medium;
 }
 
-p {
+p, ul, table {
     margin: 0% 5% 0% 5%; 
+}
+
+div.highlight {
+    margin: 1% 5% 1% 5%; 
 }
 
 .navbar {
