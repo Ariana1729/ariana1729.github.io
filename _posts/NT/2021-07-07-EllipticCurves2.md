@@ -18,7 +18,7 @@ and recalling that \\(g_k\propto\sum_{\lambda\in\Lambda-\{0\}}\lambda^{-k}\\), t
 
 ## Endomorphisms
 
-Another natural question to ask is what is the endomorphism group of an elliptic curves. It turns out holomorphic maps are quite restrictive and by using the fact that \\(\mb C\\) is the universal cover of elliptic curves, one obtains the fact that maps between curves are simply linear functions over \\(\mb C\\). This tells us that the only endomorphisms that we need to consider is \\(z\mapsto kz\\). As we require \\(k\mb Z+k\tau\mb Z\subset\mb Z+\tau\mb Z\\), we need \\(k,k\tau\in\mb Z[\tau]\\). Hence if \\(k=a+b\tau\\), we have \\(k\tau=a\tau+b\tau^2\in\mb Z[\tau]\\), implying that either \\(k\in\mb Z\\), or \\(\tau\in\mb Q(\sqrt{-d})\\) for some \\(d\\)! In the case where the endomorphism group is larger than \\(\mb Z\\), the curve is said to have complex multiplication. 
+Another natural question to ask is what is the endomorphism group of an elliptic curves. It turns out holomorphic maps are quite restrictive and by using the fact that \\(\mb C\\) is the universal cover of elliptic curves, one obtains the fact that maps between curves are simply linear functions over \\(\mb C\\) (consider the derivative of the lifted function, it must be doubly periodic!). This tells us that the only endomorphisms that we need to consider is \\(z\mapsto kz\\). As we require \\(k\mb Z+k\tau\mb Z\subset\mb Z+\tau\mb Z\\), we need \\(k,k\tau\in\mb Z[\tau]\\). Hence if \\(k=a+b\tau\\), we have \\(k\tau=a\tau+b\tau^2\in\mb Z[\tau]\\), implying that either \\(k\in\mb Z\\), or \\(\tau\in\mb Q(\sqrt{-d})\\) for some \\(d\\)! In the case where the endomorphism group is larger than \\(\mb Z\\), the curve is said to have complex multiplication. 
 
 Suppose further that \\(\tau\\) is an algebraic integer, meaning \\(\tau^2+a\tau+b=0\\) for some \\(a,b\in\mb Z\\). Let \\(K=\mb Q(\tau)\\), then it turns out that
 \\[\End{\mb Z+\mb Z\tau}=\mb Z+\mb Z\tau\subseteq\mc O_K\\]
@@ -28,6 +28,15 @@ One easy way to get an endomorphism group of \\(\mc O_K\\) is to use ideals in \
 
 For any elliptic curve \\(\Lambda=\mb Z\omega_1+\mb Z\omega_2,\frac{\omega_1}{\omega_2}\in\mc H\\), it is immediate that the points with \\(N\\)-torsion is precisely the lattice \\(\frac1n\Lambda\\). This tells us that the group structure of the \\(N\\)-torsion points on an elliptic curve \\(E\\) is simply \\(C_N\times C_N\\) and is denoted by \\(E[N]\\). It turns out that there's a natural 'inner product' that maps pairs to roots of unity. Let \\(P,Q\in E[N]\\), then we have
 \\[\begin{pmatrix}P\\\\Q\end{pmatrix}=\frac1N\begin{pmatrix}a&b\\\\c&d\end{pmatrix}\begin{pmatrix}\omega_1\\\\\omega_2\end{pmatrix}\\]
-and we define the weil to be
+and we define the Weil pairing to be
 \\[e_N(P,Q)=e^{\frac1N2\pi i(ad-bc)}\\]
-This paring satisfies many properties that we like - it's bilinear, alternating/antisymmetric and nondegenerate. It also remains 'behaves well' under isogenies and `enlarging' the torsion group, meaning using \\(MN\\)-torsion instead. Furthermore if \\(P,Q\\) generates \\(E[N]\\), then \\(e_N(P,Q)\\) is a primitive root of unity. While this definition seems somewhat opaque, it's easier to see it in a more algebraic perspective where it can be defined as some quotients of some divisors or as some antisymemtric bilinear map on the Tate module.
+This paring satisfies many properties that we like - it's bilinear, alternating/antisymmetric and nondegenerate and many other nice properties. For instance if we have an isomorphism of elliptic curves \\(f:E\to E'\\), \\(e_{N,E}(P,Q)=e_{N,E'}(f(P),f(Q))\\) and nore interestingly the following diagram commutes:
+
+{::nomarkdown}
+<p align="center">
+    <img src = "/static/posts_image/EllipticCurves2_1.svg" alt="some commutative diagram" width="25%"/>
+</p>
+{:/}
+
+
+Furthermore if \\(P,Q\\) generates \\(E[N]\\), then \\(e_N(P,Q)\\) is a primitive root of unity. While this definition seems somewhat opaque, it's easier to see it in a more algebraic perspective where it can be defined as some quotients of some divisors or as some antisymemtric bilinear map on the Tate module.
