@@ -1,0 +1,35 @@
+'''
+S
+enc = (386079309749876842581266189331199315084633369844944649764373056391927406636756664859309332969900647031968535577057461972626061217380683204814861243426100833, 359259554864203536693637432260976141242958834483215946337349249915533224609764186685187300504422852574404776741332168275878974416870974976428859453840346249, 4609042259858715542912626831254505443554981150528047369033577776290421271661714921021765537491585943106132179080897947505715388732262109459469460168202206)
+| Options:
+|	[E]xpose the parameters
+|	[T]est the encryption
+|	[S]how the encrypted flag
+|	[Q]uit
+Q
+Quitting ...
+'''
+
+
+from pwn import *
+
+r = remote("07.cr.yp.toc.tf",31010)
+r.sendline("E")
+r.recvuntil("| p = ")
+p = int(r.recvline())
+FF = GF(p)
+r.recvuntil("| u = ")
+u = FF(r.recvline())
+r.recvuntil("| v = ")
+v = FF(r.recvline())
+r.recvuntil("| w = ")
+w = FF(r.recvline())
+
+r.sendline("S")
+r.recvuntil("enc = (")
+ca,cb,cc = [FF(i) for i in r.recvuntil(")")[:-1].split(b",")]
+
+r = ca.log(u)
+s = cb.log(v)
+m = cc/w^(r+s)
+print(bytes.fromhex(hex(m)[2:]))
