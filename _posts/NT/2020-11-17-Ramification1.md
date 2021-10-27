@@ -3,8 +3,6 @@ layout: blog
 title: Ramification Part 1
 ---
 
-The proofs for statements can be found in Neukirch Section 1.8.
-
 Let \\(\mc A\\) be an arbitrary Dedekind domain with field of fractions \\(K\\) and let \\(L/K\\) be a finite extension of fields. Let \\(\mc B\\) be the integral closure of \\(\mc A\\) in \\(L\\).
 
 For any prime \\(\mf p\in\mc A\\), we let its factorization in \\(\mc B\\) be given by \\(\prod_i\mf P_i^{e_i}\\). We define \\(e_i\\) as the **ramification index** of \\(\mf P_i\\) and the degree of the field extension \\(f_i=\left[\mc B/\mf P_i:\mc A/\mf p\right]\\).
@@ -64,3 +62,7 @@ for p in Primes()[:20]+[i for i,_ in factor(K.disc())]:
 ```
 
 The same counterexample for Theorem 1 when the separability condition is relaxed applies here as well. Using the notation from the counterexample, we have \\(\mc B=\mc A[y]\\), hence using \\(y\\) as our primitive element, \\(\mathfrak F=(1)\\) and all ideals are coprime to it. The minimal polynomial of \\(y\\) is given by \\(p(z)=z^p-\left(y^p\right)\in\mc A[z]\\) and when taken modulo \\((x)\\), the polynomial remains unchanged and still can't be factored, which is in direct contradiction to the factorization of \\((x)\in\mc A\\) in \\(\mc B\\), which remains as \\((x)\\).
+
+## References
+ - Jürgen Neukirch - Algebraic number theory
+

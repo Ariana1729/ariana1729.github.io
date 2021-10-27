@@ -129,3 +129,6 @@ for p in Primes()[:100]:
     else:
         print(f"{p} has some ramification/inertia")
 ```
+
+## References
+ - Jürgen Neukirch - Algebraic number theory
