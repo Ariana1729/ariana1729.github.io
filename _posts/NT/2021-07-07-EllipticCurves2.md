@@ -40,3 +40,7 @@ This paring satisfies many properties that we like - it's bilinear, alternating/
 
 
 Furthermore if \\(P,Q\\) generates \\(E[N]\\), then \\(e_N(P,Q)\\) is a primitive root of unity. While this definition seems somewhat opaque, it's easier to see it in a more algebraic perspective where it can be defined as some quotients of some divisors or as some antisymemtric bilinear map on the Tate module.
+
+## References 
+ - Neal Koblitz - Introduction to Elliptic Curves and Modular Forms
+ - Fred Diamond and Jerry Shurman - A First Course in Modular Forms

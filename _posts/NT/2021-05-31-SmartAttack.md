@@ -28,7 +28,7 @@ For some intuition, one can consider the case that commonly appears in the Smart
  - \\(\mf m=p\mb Z_p\\)
  - \\(k=\mb F_p\\)
 
-# Exact sequence
+## Exact sequence
 
 First we shall consider the reduction map mod \\(\pi\\). For any point \\(P\in\mb P^n(K)\\), by choosing suitable homogeneous coordinates, when we take mod \\(\pi\\) on each coordinate, we get a new point \\(\tilde P\in\mb P^n(k)\\). In general, we denote reduction mod \\(\pi\\) by adding a \\(\tilde{~}\\) on top. For instance given the point \\([5,6,7]\in\mb P^2(\mb Q_3)\\), the reduction mod \\(3\\) gives the point \\([2,0,1]\in\mb P^2(\mb F_3)\\). This reduction map gives us the curve \\(\tilde E/k\\).
 
@@ -40,7 +40,7 @@ Let \\(\tilde E_{ns}(k)\\) be the group of nonsingular points on \\(\tilde E\\).
 
 Before we go on, we need a brief discussion on formal groups.
 
-# Formal groups
+## Formal groups
 
 Intuitively, a formal group is a group law that is not explicitly defined over any set. The simplest example is the additive formal group, given by \\(\hat{\mb G}_a(X,Y)=X+Y\\). We first define a formal group law over a ring \\(R\\):
 
@@ -95,10 +95,15 @@ is an isomorphism if \\(r>\frac{v(p)}{p-1}\\).
 
 In summary, each point on a curve can be parametrized by a single parameter \\(z\\), with \\(z=0\\) being the identity. This gives rise to a formal group law \\(\hat E\\) which takes this parameter as its input and we have an isomorphism \\(\hat E\cong\hat{\mb G}_a\\).
 
-# Smart attack
+## Smart attack
 
 Evidently \\(\hat E(\mf m)\\) is isomorphic to the group of points on \\(E(K)\\) such that \\(\frac xy\\) has positive valuation. This turns out to be precisely the group \\(E_1(K)\\) that we defined above as all such points must be in the kernel of the reduction map, hence nonsingular. From here we're almost done. Suppose \\(E_{ns}(k)\\) is a group of order \\(q\\) and suppose we have \\(n\tilde P=\tilde Q\\) in \\(E_{ns}(k)\\). Let \\(\log\\) be the composite map \\(E_1(K)\cong\hat E(\mf m)\cong\hat{\mb G}_a(\mf m)\\). Lift \\(\tilde P,\tilde Q\\) to points \\(P,Q\in E_0(K)\\), then since \\(nP-Q\in E_1(K)\\), we have
 
 \\[n\log(qP)-\log(qQ)=q\log(nP-Q)=0\pmod{\mf m^{f+1}}\\]
 
 which gives us some \\(n\in\frac{\mc O}{\mf m^f}=\frac{\mc O}{(q)}\\) as long as \\(\log(qP)\notin\mf m^2\\). Hence \\(n\\) is a well defined multiplication map of \\(\tilde E(k)\\), which gives us a solution to the DLP over \\(\tilde E(k)\\).
+
+## References
+ - Johannes Anschütz - Lubin-Tate Spaces (Sommersemester 2021) [lecture notes](http://www.math.uni-bonn.de/people/ja/lubintate/lecture_notes_lubin_tate.pdf)
+ - Joseph H. Silverman - The Arithmetic of Elliptic Curves
+
