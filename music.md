@@ -9,16 +9,19 @@ title: Ariana's Site
 ## Repertoire
 {: style="text-align: center;"}
 
+ - Rachmaninoff - Prelude in G minor 
+ - Rachmaninoff - Prelude in B minor 
+ - Liszt/Saint Seans - Danse Macabre 
+ - Liszt/Schubert - Erlkönig 
+ - Liszt - Transcendental Études no. 4 "Mazeppa" 
+ - Chopin - Fantasie Impromptu 
  - Chopin - Étude Op. 25 No. 6 "Thirds"
- - Chopin - Fantasie Impromptu
- - Grażyna Bacewicz - 10 Studies for piano no. 6
- - Liszt/Schubert - Erlkönig
- - Liszt - Hungarian Rhapsody No. 6
- - Liszt - La Campanella (S. 141 No. 3)
- - Liszt - Transcendental Études no. 4 "Mazeppa"
+ - Liszt - La Campanella 
+ - Grażyna Bacewicz - 10 Studies for piano no. 6 
+ - Scarlatti - Cat fugue 
+ - Liszt - Hungarian Rhapsody No. 6 
  - Liszt - Transcendental Études no. 6 "Vision"
  - Rachmaninoff - Études-Tableaux Op. 39 No. 6 "Little Red Riding Hood"
- - Rachmaninoff - Prelude in G minor
 
 ## Compositions
 {: style="text-align: center;"}
@@ -35,11 +38,23 @@ Next, the King's daughter fell ill and promises anyone who rescued her will get 
 
 In the cavern, candles represent how long a person has left to live and flames jumped around and extinguished as people are born and die. The physician asks to see his candle and Death showed a candle that was about to get extinguished. This made him extremely scared and he begged Death to relight a candle for him. Death, wanting revenge, tricks the physician to think that he will have a new candle but slips, killing the physician.
 
-[Audio](https://www.youtube.com/watch?v=jB-8ZxdN8lE&list=PLdkjwZMK_CIqn-CKwnGwTPx4e5oN35MIy&index=23)
 [Score](./static/music/Der Gevatter Tod.pdf)
+[Audio](https://www.youtube.com/watch?v=jB-8ZxdN8lE&list=PLdkjwZMK_CIqn-CKwnGwTPx4e5oN35MIy&index=23)
 
 ### Mary had a little lamb
 
 Completely satirical, would anyone actually play this, in front of kids? Hopefully not.
 
 [Score](./static/music/Mary had a little lamb.pdf)
+
+### Modulation waltz
+
+A waltz that modulates through every key!
+
+[Score](./static/music/Modulation waltz.pdf)
+[Audio](./static/music/Modulation waltz.mp3)
+
+### Elegy in A minor
+
+[Score](./static/music/Elegy in A minor.pdf)
+[Audio](./static/music/Elegy in A minor.mp3)
