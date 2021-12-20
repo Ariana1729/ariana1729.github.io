@@ -47,6 +47,13 @@ Completely satirical, would anyone actually play this, in front of kids? Hopeful
 
 [Score](./static/music/Mary had a little lamb.pdf)
 
+### Modulation waltz
+
+A waltz that modulates through every key!
+
+[Score](./static/music/Modulation waltz.pdf)
+[Audio](./static/music/Modulation waltz.mp3)
+
 ### Elegy in A minor
 
 [Score](./static/music/Elegy in A minor.pdf)
