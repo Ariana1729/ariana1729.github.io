@@ -39,13 +39,14 @@ Next, the King's daughter fell ill and promises anyone who rescued her will get 
 In the cavern, candles represent how long a person has left to live and flames jumped around and extinguished as people are born and die. The physician asks to see his candle and Death showed a candle that was about to get extinguished. This made him extremely scared and he begged Death to relight a candle for him. Death, wanting revenge, tricks the physician to think that he will have a new candle but slips, killing the physician.
 
 [Score](./static/music/Der Gevatter Tod.pdf)
-[Audio](https://www.youtube.com/watch?v=jB-8ZxdN8lE&list=PLdkjwZMK_CIqn-CKwnGwTPx4e5oN35MIy&index=23)
+[Audio](./static/music/Der Gevatter Tod.mp3)
 
 ### Mary had a little lamb
 
 Completely satirical, would anyone actually play this, in front of kids? Hopefully not.
 
 [Score](./static/music/Mary had a little lamb.pdf)
+[Audio](./static/music/Mary had a little lamb.mp3)
 
 ### Modulation waltz
 

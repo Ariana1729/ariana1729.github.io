@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 .ruby-version
 vendor
+exec_jekyll.sh
