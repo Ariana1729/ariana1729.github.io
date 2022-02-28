@@ -9,6 +9,7 @@ title: Ariana's Site
 ## Repertoire
 {: style="text-align: center;"}
 
+ - Beethoven - Piano Sonata No. 8 "Pathétique"
  - Rachmaninoff - Prelude in G minor 
  - Rachmaninoff - Prelude in B minor 
  - Liszt/Saint Seans - Danse Macabre 
@@ -43,7 +44,7 @@ In the cavern, candles represent how long a person has left to live and flames j
 
 ### Mary had a little lamb
 
-Completely satirical, would anyone actually play this, in front of kids? Hopefully not.
+had
 
 [Score](./static/music/Mary had a little lamb.pdf)
 [Audio](./static/music/Mary had a little lamb.mp3)

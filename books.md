@@ -14,22 +14,30 @@ Algebra:
  - Nathan Jacobson - Basic Algebra 1
  - Nathan Jacobson - Basic Algebra 2
  - Claudio Procesi - Lie Groups
- - M. F. Atiyah I. G. MacDonald - Introduction to Commutative Algebra
- - Qing Liu - Algebraic geometry and arithmetic curves
+ - Atiyah, MacDonald - Introduction to Commutative Algebra
+ - Qing Liu - Algebraic geometry and Arithmetic Curves
  - Hartshorne - Algebraic Geometry
+ - Matsumura, Reid - Commutative ring theory
 
 Topology:
- - James Munkres - Topology
- - May - A Concise Course in Algebraic Topology
+ - Munkres - Topology
+ - Bredon - Topology and geometry
  - Tammo tom Dieck - Algebraic Topology
  - Lee - Introduction to Smooth Manifolds
- - Bruno Martelli - An Introduction to Geometric Topology
+ - Martelli - An Introduction to Geometric Topology
 
 Number Theory:
- - Daniel A. Marcus - Number fields
  - Neukirch - Algebraic Number Theory
  - Silverman - Arithematic of Elliptic Curves
- - Neal Koblitz - Introduction to Elliptic Curves and Modular Forms
+ - Koblitz - Introduction to Elliptic Curves and Modular Forms
+ - Diamond, Shurman - A First Course in Modular Forms
+
+Analysis:
+ - Rudin - Principles of mathematical analysis
+ - Rudin - Real and Complex Analysis
+ - Rudin - Functional analysis
+ - Klenke - Probability Theory: A Comprehensive Course
+ - Miranda - Algebraic curves and Riemann surfaces
 
 ## Physics
 
