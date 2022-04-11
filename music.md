@@ -9,6 +9,7 @@ title: Ariana's Site
 ## Repertoire
 {: style="text-align: center;"}
 
+ - Scarlatti - Cat Fugue
  - Beethoven - Piano Sonata No. 8 "Pathétique"
  - Rachmaninoff - Prelude in G minor 
  - Rachmaninoff - Prelude in B minor 
@@ -19,7 +20,6 @@ title: Ariana's Site
  - Chopin - Étude Op. 25 No. 6 "Thirds"
  - Liszt - La Campanella 
  - Grażyna Bacewicz - 10 Studies for piano no. 6 
- - Scarlatti - Cat fugue 
  - Liszt - Hungarian Rhapsody No. 6 
  - Liszt - Transcendental Études no. 6 "Vision"
  - Rachmaninoff - Études-Tableaux Op. 39 No. 6 "Little Red Riding Hood"
