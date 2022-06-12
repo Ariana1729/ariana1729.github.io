@@ -9,16 +9,17 @@ title: Ariana's Site
 ## Repertoire
 {: style="text-align: center;"}
 
+ - Chopin - Nocturne in C minor Op. 48 No. 1
  - Scarlatti - Cat Fugue
  - Beethoven - Piano Sonata No. 8 "Pathétique"
  - Rachmaninoff - Prelude in G minor 
+ - Liszt/Schubert - Erlkönig 
+ - Liszt - La Campanella 
  - Rachmaninoff - Prelude in B minor 
  - Liszt/Saint Seans - Danse Macabre 
- - Liszt/Schubert - Erlkönig 
  - Liszt - Transcendental Études no. 4 "Mazeppa" 
  - Chopin - Fantasie Impromptu 
  - Chopin - Étude Op. 25 No. 6 "Thirds"
- - Liszt - La Campanella 
  - Grażyna Bacewicz - 10 Studies for piano no. 6 
  - Liszt - Hungarian Rhapsody No. 6 
  - Liszt - Transcendental Études no. 6 "Vision"
