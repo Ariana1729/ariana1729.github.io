@@ -9,6 +9,8 @@ title: Ariana's Site
 ## Repertoire
 {: style="text-align: center;"}
 
+ - Liszt - Hungarian Rhapsody No. 2
+ - Mozart - Piano Sonata No. 14 in C minor, K. 457
  - Chopin - Nocturne in C minor Op. 48 No. 1
  - Scarlatti - Cat Fugue
  - Beethoven - Piano Sonata No. 8 "Pathétique"

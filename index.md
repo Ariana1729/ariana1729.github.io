@@ -5,9 +5,9 @@ title: Ariana's Site
 
 # Welcome!
 
-I'm Ariana, currently waiting to enrol into a university and I'm mainly interested in math and music!
+I'm Ariana, currently studying in NUS!
 
-I've poked into a few areas, including Math, Physics, Music, Security and am still actively learning and reading. You can find out more about my repertoire and compositions in the Music tab and the books I'm reading in the Books tab
+I'm interested few areas, including Math, Music, Cyber Security and Physics and am still active in all those areas. You can find out more about my repertoire and compositions in the Music tab and the books I'm reading in the Books tab
 
 I'm also looking into some interesting problems in Math, check out the Problems tab to see more on these problems and feel free to contact me for discussions if you're interested!
 
