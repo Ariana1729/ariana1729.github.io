@@ -1,0 +1,55 @@
+import{_ as c,I as a,c as e,o as p,j as n,ah as g,a as r,J as i,w as l}from"./chunks/framework.CdwlI3v5.js";const v=JSON.parse(`{"title":"","description":"","frontmatter":{"_layout":"writeup","ctf":"WhiteHats CTF 2021","chal":"Piggy_Bank / Piggy_Bank_Revenge","category":"pwn","flag":"WH2021{N0w_the_p1ggy_is_wORS3_than_empty_:'(} / WH2021{(Don't)Try_th1s_0n_youR_B4nk!}","points":"287 / 539","solves":"64 / 51"},"headers":[],"relativePath":"writeups/2021/WhiteHats 2021/Piggy_Bank/2021-03-07-Piggy Bank.md","filePath":"writeups/2021/WhiteHats 2021/Piggy_Bank/2021-03-07-Piggy Bank.md"}`),h={name:"writeups/2021/WhiteHats 2021/Piggy_Bank/2021-03-07-Piggy Bank.md"},u={style:{overflow:"visible","min-height":"1px","min-width":"1px","vertical-align":"-0.14ex"},xmlns:"http://www.w3.org/2000/svg",width:"1.131ex",height:"0.084ex",role:"img",focusable:"false",viewBox:"0 25 500 37","aria-hidden":"true"};function d(y,s,k,m,_,w){const t=a("mjx-assistive-mml"),o=a("mjx-container");return p(),e("div",null,[s[3]||(s[3]=n("p",null,"Piggy bank",-1)),n("blockquote",null,[n("p",null,[s[2]||(s[2]=r("Time to save your angbao money! ",-1)),i(o,{class:"MathJax",jax:"SVG",style:{direction:"ltr",position:"relative"}},{default:l(()=>[(p(),e("svg",u,[...s[0]||(s[0]=[n("g",{stroke:"currentColor",fill:"currentColor","stroke-width":"0",transform:"scale(1,-1)"},[n("g",{"data-mml-node":"math"},[n("g",{"data-mml-node":"mi"},[n("path",{"data-c":"5F",d:"M0 -62V-25H499V-62H0Z",style:{"stroke-width":"3"}})])])],-1)])])),i(t,{unselectable:"on",display:"inline",style:{top:"0px",left:"0px",clip:"rect(1px, 1px, 1px, 1px)","-webkit-touch-callout":"none","-webkit-user-select":"none","-khtml-user-select":"none","-moz-user-select":"none","-ms-user-select":"none","user-select":"none",position:"absolute",padding:"1px 0px 0px 0px",border:"0px",display:"block",width:"auto",overflow:"hidden"}},{default:l(()=>[...s[1]||(s[1]=[n("math",{xmlns:"http://www.w3.org/1998/Math/MathML"},[n("mi",{mathvariant:"normal"},"_")],-1)])]),_:1})]),_:1})])]),s[4]||(s[4]=g(`<p>Piggy bank revenge:</p><blockquote><p>Seems there was an issue with the previous implementation. I&#39;ve introduced a HOTFIX that should prevent any further vulnerabilities. I&#39;ve achieved an unhackable piggy bank now for sure.</p></blockquote><p>My solution for both was purely by fuzzing, when connecting to the netcat server provided, we see a simple bank menu:</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span>Piggy Bank value: $1337.00</span></span>
+<span class="line"><span>Wallet value:     $100.00</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1) Deposit INTO Piggy</span></span>
+<span class="line"><span>2) Withdraw FROM Piggy</span></span>
+<span class="line"><span>3) Buy flag</span></span>
+<span class="line"><span>4) Exit</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Your choice:</span></span></code></pre></div><p>Immediately one thinks &#39;how can someone implementing this mess up&#39;. The easiest way is to allow depositing negative amounts of money, and in C negative values are stored as &#39;a very big integer&#39;, so let&#39;s try to input big integers. This immediately allows us to buy the flag in both challenges.</p><p>Piggy bank:</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span>Piggy Bank value: $1337.00</span></span>
+<span class="line"><span>Wallet value:     $100.00</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1) Deposit INTO Piggy</span></span>
+<span class="line"><span>2) Withdraw FROM Piggy</span></span>
+<span class="line"><span>3) Buy flag</span></span>
+<span class="line"><span>4) Exit</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Your choice: 1</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>How much would you like to DEPOSIT?</span></span>
+<span class="line"><span>&gt; $200000000</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Piggy Bank value: $-14747027.-80</span></span>
+<span class="line"><span>Wallet value:     $14748464.80</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1) Deposit INTO Piggy</span></span>
+<span class="line"><span>2) Withdraw FROM Piggy</span></span>
+<span class="line"><span>3) Buy flag</span></span>
+<span class="line"><span>4) Exit</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Your choice: 3</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>WH2021{N0w_the_p1ggy_is_wORS3_than_empty_:&#39;(}</span></span></code></pre></div><p>Piggy bank revenge:</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span>Piggy Bank value: $1337.00</span></span>
+<span class="line"><span>Wallet value:     $100.00</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1) Deposit INTO Piggy</span></span>
+<span class="line"><span>2) Withdraw FROM Piggy</span></span>
+<span class="line"><span>3) Buy flag</span></span>
+<span class="line"><span>4) Exit</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Your choice: 1</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>How much would you like to DEPOSIT?</span></span>
+<span class="line"><span>&gt; $200000000</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Piggy Bank value: $-14747027.-80</span></span>
+<span class="line"><span>Wallet value:     $14748464.80</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1) Deposit INTO Piggy</span></span>
+<span class="line"><span>2) Withdraw FROM Piggy</span></span>
+<span class="line"><span>3) Buy flag</span></span>
+<span class="line"><span>4) Exit</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Your choice: 3</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>WH2021{(Don&#39;t)Try_th1s_0n_youR_B4nk!}</span></span></code></pre></div>`,9))])}const f=c(h,[["render",d]]);export{v as __pageData,f as default};
